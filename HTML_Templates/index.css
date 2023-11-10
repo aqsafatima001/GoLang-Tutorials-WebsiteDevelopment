@@ -1,0 +1,12 @@
+/* index.css */
+
+body {
+    background-color: rgb(237, 169, 169);
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+}
