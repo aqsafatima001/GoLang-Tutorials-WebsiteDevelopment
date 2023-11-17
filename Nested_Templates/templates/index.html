@@ -1,10 +1,69 @@
 {{template "Header"}}
-<div class="container mt-4">
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+    }
+
+    #intro-container {
+        background-color: #ca4a05; /* Orange background */
+    }
+
+    #services-container {
+        background-color: #01509f; /* Blue background */
+    }
+
+    #features-container {
+        background-color: #ca4a05; /* Orange background */
+    }
+
+    #contact-container {
+        background-color: #01509f; /* Blue background */
+    }
+
+    h2 {
+        color: #fff; /* White text */
+    }
+
+    p {
+        line-height: 1.6;
+        color: #fff; /* White text */
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        margin-bottom: 8px;
+        color: #fff; /* White text */
+    }
+
+    #contact p {
+        margin-bottom: 8px;
+    }
+</style>
+
+<div id="intro-container" class="container mt-4">
     <section id="intro">
         <h2>Welcome to Your Website!</h2>
         <p>This is the introduction section of your website. You can add a brief description of what your website is about.</p>
     </section>
+</div>
 
+<div id="services-container" class="container mt-4">
     <section id="services">
         <h2>Our Services</h2>
         <p>Explore the services we offer to our clients. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -14,7 +73,9 @@
             <li>Service 3</li>
         </ul>
     </section>
+</div>
 
+<div id="features-container" class="container mt-4">
     <section id="features">
         <h2>Key Features</h2>
         <p>Highlight some key features of your product or service. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -24,7 +85,9 @@
             <li>Feature 3</li>
         </ul>
     </section>
+</div>
 
+<div id="contact-container" class="container mt-4">
     <section id="contact">
         <h2>Contact Us</h2>
         <p>Get in touch with us for any inquiries or collaborations. We are here to assist you!</p>
@@ -32,4 +95,5 @@
         <p>Phone: (123) 456-7890</p>
     </section>
 </div>
+
 {{template "Footer"}}
